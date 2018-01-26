@@ -22,18 +22,8 @@ class Viewer
     rate = WatchListing.all.find do |obj|
       obj.viewer == self && obj.movie == movie
     end
-    rate.rating = rating 
+    rate.rating = rating
 
   end
 
 end
-
-
-
-
-# Viewer.all
-# returns all of the viewers
-# Viewer#add_to_watchlist(movies)
-# this method should receive an array of one or more movie instances and add them to the viewer's watchlisting
-# Viewer#rate_movie(movie, rating)
-# given a movie on a viewer's watchlisting and a rating (a number between 1 and 5), assign the rating to the movie. Where should the rating that an individual viewer gives to an individual movie be stored?
